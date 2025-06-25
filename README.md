@@ -60,7 +60,8 @@ I’m Anirban Tarafdar, a 3rd year Computer Science student with a focus on **Cy
 
 3. Or deploy using GitHub Pages!
    
-📬 License
+📬 License  
+  
 Open-sourced under the MIT license.
 
 ---
