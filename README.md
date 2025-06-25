@@ -1,6 +1,6 @@
-# Anirban Tarafdar - Matrix Terminal Portfolio
+# Anirban Tarafdar Portfolio
 
-This is my personal cyber-themed portfolio built with a **Matrix-style terminal aesthetic**, showcasing my skills, certifications, and cybersecurity projects.
+This is my personal portfolio showcasing my skills, certifications, and cybersecurity projects.
 
 ## 🔗 Live Demo
 👉 [View Portfolio](https://friatar.github.io/anirban-portfolio/)
@@ -29,16 +29,16 @@ This is my personal cyber-themed portfolio built with a **Matrix-style terminal 
 ---
 
 ## 📜 Folder Structure
-anirban-portfolio/
-├── index.html
-├── styles/
-│ └── style.css
-├── scripts/
-│ └── main.js
-├── assets/
-│ ├── profile.JPG
-│ └── cv.pdf
-└── README.md
+anirban-portfolio/  
+├── index.html  
+├── styles/  
+│ └── style.css  
+├── scripts/  
+│ └── main.js  
+├── assets/  
+│ ├── profile.JPG  
+│ └── cv.pdf  
+└── README.md  
 
 ---
 
