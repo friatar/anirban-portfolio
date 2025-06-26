@@ -1,44 +1,33 @@
-/* Background + global */
 body {
   margin: 0;
   padding: 2rem;
   background: linear-gradient(160deg, #000000 0%, #0a0f2c 40%, #1b294b 100%);
   background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
   color: #00FF41;
   font-family: 'Share Tech Mono', monospace;
 }
-
-/* Profile top section */
 .profile-section {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   gap: 2rem;
-  margin-bottom: 2rem;
   text-align: center;
 }
-
 .profile-img {
   width: 200px;
   border-radius: 50%;
   border: 4px solid #00FF41;
   box-shadow: 0 0 15px #00FF41, 0 0 30px #00FF41;
 }
-
 .intro-text h1 {
   font-size: 2.5rem;
   color: #ffffff;
 }
-
 .intro-text p {
   font-size: 1.2rem;
   color: #00FF41;
 }
-
-/* Resume button */
 .btn-glow {
   margin-top: 10px;
   padding: 10px 20px;
@@ -50,13 +39,10 @@ body {
   box-shadow: 0 0 10px #00ff41;
   transition: background 0.3s ease;
 }
-
 .btn-glow:hover {
-  background-color: #003366; /* dark blue */
+  background-color: #003366;
   color: #ffffff;
 }
-
-/* Content section boxes */
 .terminal-box {
   max-width: 900px;
   margin: 1.5rem auto;
@@ -66,115 +52,27 @@ body {
   box-shadow: 0 0 15px #00FF41;
   border-radius: 12px;
 }
-
-/* Section styling */
-pre.typewriter {
+pre {
   font-size: 1rem;
   line-height: 1.6;
-  margin: 0;
-  padding: 0;
   white-space: pre-wrap;
 }
-
-pre .section-title {
-  font-size: 2rem;
+.section-title {
+  font-size: 1.6rem;
   font-weight: bold;
-  color: #FFFFFF;
-  margin-bottom: 1rem;
-  display: block;
+  color: #00FF41;
 }
-
-pre .label {
+.label {
   font-size: 1.2rem;
   font-weight: 600;
   color: #00FFFF;
-  margin-top: 0.8rem;
-  display: block;
 }
-
-pre .description {
+.description {
   font-size: 1rem;
   color: #ffffff;
-  padding-left: 1rem;
-  display: inline;
 }
-
-pre .highlight {
+.highlight {
   font-size: 1.1rem;
   color: #FFA500;
   font-weight: bold;
-  display: inline;
-}
-
-/* Links */
-a {
-  color: #00FF41;
-  text-decoration: none;
-}
-
-a:hover {
-  color: #00BFFF;
-  text-shadow: 0 0 8px #00BFFF;
-}
-
-/* Typing cursor */
-.cursor {
-  display: inline-block;
-  width: 10px;
-  height: 24px;
-  background-color: #00FF41;
-  animation: blink 1s step-start infinite;
-  vertical-align: middle;
-  margin-left: 5px;
-}
-
-@keyframes blink {
-  50% { opacity: 0; }
-}
-
-/* Responsive layout */
-@media screen and (max-width: 768px) {
-  .profile-img {
-    width: 140px;
-  }
-
-  .intro-text h1 {
-    font-size: 2rem;
-  }
-
-  .intro-text p {
-    font-size: 1rem;
-  }
-
-  .btn-glow {
-    padding: 8px 16px;
-  }
-
-  .terminal-box {
-    margin: 1rem 1rem;
-  }
-}
-@media screen and (max-width: 768px) {
-  .terminal-box {
-    margin: 1rem auto;
-    padding: 1rem;
-    max-width: 95vw;
-    font-size: 0.95rem;
-  }
-
-  pre .section-title {
-    font-size: 1.3rem;
-  }
-
-  pre .label {
-    font-size: 1.1rem;
-  }
-
-  pre .description {
-    font-size: 0.95rem;
-  }
-
-  pre .highlight {
-    font-size: 1rem;
-  }
 }
