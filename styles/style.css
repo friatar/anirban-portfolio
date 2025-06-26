@@ -90,7 +90,7 @@ footer {
 /* Animations */
 @keyframes fadeSlideUp {
   to {
-    opacity: 1;
+    opacity: 0.5;
     transform: translateY(0);
   }
 }
