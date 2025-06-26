@@ -74,6 +74,38 @@ a:hover {
   vertical-align: middle;
   margin-left: 5px;
 }
+pre.typewriter {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+pre .section-title {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #00FF41;
+  margin-bottom: 1rem;
+}
+
+pre .label {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #00FFFF;
+  margin-top: 0.8rem;
+}
+
+pre .description {
+  font-size: 1rem;
+  color: #ffffff;
+  padding-left: 1rem;
+}
+
+pre .highlight {
+  font-size: 1.1rem;
+  color: #FFA500;
+  font-weight: bold;
+}
 
 @keyframes blink {
   50% { opacity: 0; }
