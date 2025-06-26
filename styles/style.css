@@ -107,6 +107,10 @@ pre .highlight {
   font-weight: bold;
 }
 
+.btn-glow:hover {
+  background-color: #003366; /* dark blue on hover */
+  color: #ffffff;
+}
 @keyframes blink {
   50% { opacity: 0; }
 }
