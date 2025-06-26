@@ -1,28 +1,31 @@
 document.addEventListener("DOMContentLoaded", () => {
   const typewriterSections = document.querySelectorAll(".typewriter");
 
-  const typeLineByLine = (element, lines, delay = 30) => {
+  const typeLineByLine = (element, delay = 30) => {
+    const lines = Array.from(element.querySelectorAll("div"));
+    element.innerHTML = ""; // Clear old content
+
     let lineIndex = 0;
-    element.innerHTML = "";
 
     const typeLine = () => {
       if (lineIndex >= lines.length) return;
 
+      const fullLine = lines[lineIndex].innerHTML;
+      const newLine = document.createElement("div");
       let charIndex = 0;
-      const line = lines[lineIndex];
-      const lineDiv = document.createElement("div");
 
       const typeChar = () => {
-        if (charIndex <= line.length) {
-          lineDiv.innerHTML = line.substring(0, charIndex);
-          charIndex++;
+        newLine.innerHTML = fullLine.substring(0, charIndex + 1);
+        charIndex++;
+        if (charIndex < fullLine.length) {
           setTimeout(typeChar, delay);
         } else {
-          element.appendChild(lineDiv);
+          element.appendChild(newLine);
           lineIndex++;
-          setTimeout(typeLine, 100);
+          setTimeout(typeLine, 150);
         }
       };
+
       typeChar();
     };
 
@@ -31,13 +34,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        const el = entry.target;
-        const lines = JSON.parse(el.getAttribute("data-lines"));
-        if (!el.getAttribute("data-typed")) {
-          typeLineByLine(el, lines);
-          el.setAttribute("data-typed", "true");
-        }
+      if (entry.isIntersecting && !entry.target.getAttribute("data-typed")) {
+        typeLineByLine(entry.target);
+        entry.target.setAttribute("data-typed", "true");
       }
     });
   }, { threshold: 0.5 });
