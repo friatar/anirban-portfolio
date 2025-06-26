@@ -10,17 +10,17 @@ document.addEventListener("DOMContentLoaded", () => {
 
       let charIndex = 0;
       const line = lines[lineIndex];
-      const lineSpan = document.createElement("div");
+      const lineDiv = document.createElement("div");
 
       const typeChar = () => {
-        if (charIndex < line.length) {
-          lineSpan.innerHTML += line.charAt(charIndex);
+        if (charIndex <= line.length) {
+          lineDiv.innerHTML = line.substring(0, charIndex);
           charIndex++;
           setTimeout(typeChar, delay);
         } else {
-          element.appendChild(lineSpan);
+          element.appendChild(lineDiv);
           lineIndex++;
-          setTimeout(typeLine, 150);
+          setTimeout(typeLine, 100);
         }
       };
       typeChar();
