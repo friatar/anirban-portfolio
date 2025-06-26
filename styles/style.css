@@ -154,3 +154,27 @@ a:hover {
     margin: 1rem 1rem;
   }
 }
+@media screen and (max-width: 768px) {
+  .terminal-box {
+    margin: 1rem auto;
+    padding: 1rem;
+    max-width: 95vw;
+    font-size: 0.95rem;
+  }
+
+  pre .section-title {
+    font-size: 1.3rem;
+  }
+
+  pre .label {
+    font-size: 1.1rem;
+  }
+
+  pre .description {
+    font-size: 0.95rem;
+  }
+
+  pre .highlight {
+    font-size: 1rem;
+  }
+}
