@@ -91,6 +91,12 @@ footer {
   animation: blink 1s infinite;
 }
 
+.label:hover {
+  color: #00FF41;
+  text-shadow: 0 0 5px #00FF41;
+  cursor: default;
+}
+
 @keyframes blink {
   0%   { opacity: 1; }
   50%  { opacity: 0; }
@@ -101,7 +107,7 @@ footer {
 /* Animations */
 @keyframes fadeSlideUp {
   to {
-    opacity: 0.5;
+    opacity: 1;
     transform: translateY(0);
   }
 }
