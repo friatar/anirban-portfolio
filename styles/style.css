@@ -96,6 +96,12 @@ footer {
   text-shadow: 0 0 5px #00FF41;
   cursor: default;
 }
+.cursor {
+  display: inline-block;
+  width: 2px;
+  background: #00FF41;
+  animation: blink 1s infinite;
+}
 
 @keyframes blink {
   0%   { opacity: 1; }
@@ -134,4 +140,8 @@ footer {
   0% { opacity: 1; }
   50% { opacity: 0.85; }
   100% { opacity: 1; }
+}
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
 }
