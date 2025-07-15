@@ -1,13 +1,14 @@
-/* === Base Styles === */
+/* Base Styles */
 
 body {
   margin: 0;
   padding: 2rem;
-  background: linear-gradient(160deg, #000000 0%, #0a0f2c 40%, #1b294b 100%);
+  background: linear-gradient(-45deg, #000000, #0a0f2c, #1b294b, #000000);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
   background-attachment: fixed;
   color: #00FF41;
   font-family: 'Share Tech Mono', monospace;
-  position: relative;
 }
 
 body::after {
@@ -193,7 +194,19 @@ footer {
   animation: blink 1s infinite;
 }
 
-/* === Animations === */
+/*Animations */
+
+@keyframes gradientBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
 
 a:hover {
   color: #00FF41; /* Neon green on hover */
