@@ -57,6 +57,13 @@ body::after {
   color: #00FF41;
 }
 
+.section-title {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #00FF41;
+  animation: section-pulse 2.5s ease-in-out infinite;
+}
+
 .btn-glow {
   margin-top: 10px;
   padding: 10px 20px;
@@ -94,6 +101,14 @@ body::after {
 .terminal-box:nth-of-type(4) { animation-delay: 0.8s; }
 .terminal-box:nth-of-type(5) { animation-delay: 1s; }
 .terminal-box:nth-of-type(6) { animation-delay: 1.2s; }
+
+.terminal-box:nth-of-type(2) pre {
+  color: #ffffff;
+}
+
+.terminal-box:nth-of-type(2) .section-title {
+  color: #00FF41;
+}
 
 .terminal-header {
   display: flex;
@@ -223,4 +238,9 @@ footer {
   60% { text-shadow: -2px 0 magenta; }
   80% { text-shadow: 2px 0 cyan; }
   100% { text-shadow: 0 0 5px #00FF41; }
+}
+
+@keyframes section-pulse {
+  0%, 100% { text-shadow: 0 0 5px #00FF41, 0 0 10px #00FF41; }
+  50% { text-shadow: 0 0 10px #00FF41, 0 0 20px #00FF41; }
 }
