@@ -2,7 +2,7 @@
 
 This is my personal portfolio showcasing my skills, certifications, and cybersecurity projects.
 
-## 🔗 Hey! My portfolio is now live
+## 🔗 Hey! My Portfolio Is Now Live
 👉 [View Portfolio](https://friatar.github.io/anirban-portfolio/)
 
 ---
