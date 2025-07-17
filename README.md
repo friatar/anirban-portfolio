@@ -2,7 +2,7 @@
 
 This is my personal portfolio showcasing my skills, certifications, and cybersecurity projects.
 
-## 🔗 Live Demo
+## 🔗 Hey! My portfolio is now live
 👉 [View Portfolio](https://friatar.github.io/anirban-portfolio/)
 
 ---
@@ -28,23 +28,10 @@ This is my personal portfolio showcasing my skills, certifications, and cybersec
 
 ---
 
-## 📜 Folder Structure
-anirban-portfolio/  
-├── index.html  
-├── styles/  
-│ └── style.css  
-├── scripts/  
-│ └── main.js  
-├── assets/  
-│ ├── profile.JPG  
-│ └── cv.pdf  
-└── README.md  
-
----
 
 ## 👤 About Me
 
-I’m Anirban Tarafdar, a 3rd year Computer Science student with a focus on **Cybersecurity** and **Penetration Testing**. This portfolio is my online terminal that reflects my passion for clean code and security.
+I’m Anirban Tarafdar, a 4th year Computer Science student with a focus on **Cybersecurity** and **Penetration Testing**.
 
 - 🔗 [LinkedIn](https://www.linkedin.com/in/anirban-tarafdar/)
 - 🔗 [GitHub](https://github.com/friatar)
